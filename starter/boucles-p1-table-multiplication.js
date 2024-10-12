@@ -18,3 +18,17 @@ N.B. Faites-le de deux manières différentes :
 // avec WHILE
 // Répétez le même processus avec une boucle WHILE, en demandant à nouveau la table de multiplication et le nombre de valeurs
 
+//Avec la boucle FOR
+let multiple= parseInt(prompt('Quelle table de multiplication souhaitez-vous afficher ? La table de multiplication par'));
+let repetition= parseInt(prompt('Combien de valeurs souhaitez-vous afficher pour cette table ?'));
+let i;
+for(i=multiple; i<=multiple*repetition; i+=multiple){
+    console.log(i);
+}
+
+//Avec la boucle WHILE
+i=0;
+while(i<multiple*repetition){
+    i+=multiple;
+    console.log(i);
+}

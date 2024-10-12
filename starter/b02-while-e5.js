@@ -25,10 +25,17 @@ BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
 
-
-
-
+/*let i= prompt('Tapez une lettre ou X pour sortir :');
+while(i!=='X'){
+    i=prompt('Tapez une lettre ou X pour sortir :');
+}*/
 
 // code avec le bonus
 
-
+let i= prompt('Tapez une lettre ou X pour sortir :');
+let mot='';
+while(i!=='X'){
+    mot=mot+i;
+    i=prompt('Tapez une lettre ou X pour sortir :');
+}
+console.log(mot);
